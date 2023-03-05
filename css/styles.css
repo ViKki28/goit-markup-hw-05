@@ -156,10 +156,9 @@ button {
 
 .service-buttons {
   display: flex;
-
+  justify-content: center;
   margin-left: auto;
   margin-right: 0;
-  justify-content: center;
 }
 .menu-item-service:not(:nth-child(5n)) {
   margin-right: 24px;
@@ -207,7 +206,6 @@ button {
   line-height: 1.5;
   color: var(--focused-color);
   background: var(--backraund-buttons-team);
-  cursor: pointer;
   border: 1px solid var(--footer-text-color);
   border-radius: 4px;
   padding: 12px 24px 12px 24px;
@@ -231,6 +229,23 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.overlay {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  background-color: var(--focused-color);
+  color: var(--backraund-buttons-team);
+  font-weight: 400;
+  font-size: 16px;
+
+  padding: 40px 32px 132px 32px;
+}
+.img-wrapper {
+  position: relative;
 }
 
 /*==== Section 2 ====*/
